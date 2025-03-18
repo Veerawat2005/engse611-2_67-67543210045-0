@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="main-image">
+            <img id="mainImage" src="https://i.pinimg.com/736x/b2/63/62/b2636225a15957cad9babd1bd8272e06.jpg" alt="Main Image">
+        </div>
+        <div class="thumbnails">
+            <img class="thumb" src="https://i.pinimg.com/736x/b2/63/62/b2636225a15957cad9babd1bd8272e06.jpg" alt="Thumbnail 1" onclick="changeImage(this)">
+            <img class="thumb" src="https://i.pinimg.com/736x/24/53/0d/24530d3e221f7fd2b333366bea98bef2.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+            <img class="thumb" src="https://i.pinimg.com/736x/3e/ed/9a/3eed9a2decff4a29b7614856a3390304.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+            <img class="thumb" src="https://i.pinimg.com/736x/15/6e/9f/156e9f34d3434953c022bac94fa2516a.jpg" alt="Thumbnail 4" onclick="changeImage(this)">
+        </div>
+    </div>
+    <script>
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+        }
+    </script>
+</body>
+</html>
